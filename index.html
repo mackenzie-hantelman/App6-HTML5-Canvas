@@ -44,7 +44,6 @@ var M_canvasdocument.getElementById("M");
 function draw_M() {
   var M_canvas = document.getElementById("M");
   var M_context = M_canvas.getContext("2d");
-  M_context.fillRect(50, 25, 150, 100);
 }
 	
 var c = document.getElementById("M");
@@ -96,7 +95,7 @@ ctx.fillText("Mackenzie", 10, 50);
 	</div>
 		
 	<div id="content" class="w3-container">
-		<a onclick="fillRect();" class="w3-button w3-teal w3-round">add a rectangle!</a> 
+		<a onclick="M_context.fillRect(50, 25, 150, 100);" class="w3-button w3-teal w3-round">add a rectangle!</a> 
 		<a onclick="fillText();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> 
 	</div>
 
