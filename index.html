@@ -53,11 +53,11 @@ function draw_Name() {
 }
 	
    
-function draw_Image() {
+window.onload = draw_Image() {
    var canvas = document.getElementById("m");
    var ctx = canvas.getContext("2d");
    var plant = document.getElementById("plant")
-   ctx.drawImage(plant, 40, 200)
+   ctx.drawImage(plant, 20, 200)
    
 };
 
@@ -100,9 +100,9 @@ function draw_Image() {
 	</div>
 		
 	<div id="content" class="w3-container">
-		<canvas id="m" width="300" height="225"style="border:1px solid #000000;"> 
-		</canvas>
-		<img id="plant" src="https://i.pinimg.com/564x/c2/20/82/c22082e1376a7021830baa6bb277c589.jpg.">
+		<canvas id="m" width="300" height="225"style="border:1px solid #000000;"></canvas>
+		
+		<img id="plant" src="https://i.pinimg.com/564x/c2/20/82/c22082e1376a7021830baa6bb277c589.jpg">
 	
 		<a onclick="draw_Rectangle();" class="w3-button w3-teal w3-round">add a rectangle!</a> 
 		<a onclick="draw_Name();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> 
