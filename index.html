@@ -52,11 +52,13 @@ function draw_Name() {
    ctx.fillText("mackenzie", 10, 50);
 }
 	
+   
+function draw_Image() {
    var canvas = document.getElementById("m");
    var ctx = canvas.getContext("2d");
    var plant = new Image();
    plant.src = "i.pinimg.com/564x/c2/20/82/c22082e1376a7021830baa6bb277c589.jpg.";
-   plant.onload = function() {
+   plant.onload = draw_Image() 
 	   context.drawImage(plant, 40, 200);
    
 };
