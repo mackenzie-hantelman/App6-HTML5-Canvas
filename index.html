@@ -52,9 +52,12 @@ function draw_Name() {
    ctx.fillText("mackenzie", 10, 50);
 }
 	
-function add_Image
+function add_Image() {
    var canvas = document.getElementById("m");
    var ctx = canvas.getContext("2d");
+   var plant = document.getElementById("plant");
+   ctx.drawImage(plant, 30, 200);
+}
 
 </script>
 
@@ -100,6 +103,8 @@ function add_Image
 	
 		<a onclick="draw_Rectangle();" class="w3-button w3-teal w3-round">add a rectangle!</a> 
 		<a onclick="draw_Name();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> 
+		
+		<img id="plant" src=https://i.pinimg.com/564x/c2/20/82/c22082e1376a7021830baa6bb277c589.jpg 
 		<a onclick="add_Image();" class="w3-button w3-teal w3-round">click for a plant <3</a> 
 	
 	</div>
