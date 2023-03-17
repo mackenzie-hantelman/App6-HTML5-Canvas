@@ -39,8 +39,6 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
-var m_canvasdocument.getElementById("m"); 
-	
 function draw_Rectangle() {
   var canvas = document.getElementById("m");
   var ctx = canvas.getContext("2d");
@@ -93,7 +91,8 @@ function draw_Name() {
 	</div>
 		
 	<div id="content" class="w3-container">
-		<canvas id="m" width="300" height="225"style="border:1px solid #000000;"> </canvas>
+		<canvas id="m" width="300" height="225"style="border:1px solid #000000;"> 
+		</canvas>
 	
 		<a onclick="draw_Rectangle();" class="w3-button w3-teal w3-round">add a rectangle!</a> 
 		<a onclick="draw_Name();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> 
