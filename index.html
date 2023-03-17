@@ -41,15 +41,17 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 var M_canvasdocument.getElementById("M"); 
 	
-function draw_M() {
+function draw_Rectangle() {
   var M_canvas = document.getElementById("M");
   var M_context = M_canvas.getContext("2d");
+  M_context.fillRect(50, 25, 150, 100)
 }
 	
-var c = document.getElementById("M");
-var ctx = c.getContext("2d");
-ctx.font = "30px Arial";
-ctx.fillText("Mackenzie", 10, 50);
+function draw_Name() {
+   var c = document.getElementById("M");
+   var ctx = c.getContext("2d");
+   ctx.font = "30px Arial";
+   ctx.fillText("Mackenzie", 10, 50);
 }	
 
 </script>
@@ -95,8 +97,8 @@ ctx.fillText("Mackenzie", 10, 50);
 	</div>
 		
 	<div id="content" class="w3-container">
-		<a onclick="M_context.fillRect(50, 25, 150, 100);" class="w3-button w3-teal w3-round">add a rectangle!</a> 
-		<a onclick="fillText();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> 
+		<a onclick="draw_Rectangle();" class="w3-button w3-teal w3-round">add a rectangle!</a> 
+		<a onclick="draw_Name();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> 
 	</div>
 
 	
