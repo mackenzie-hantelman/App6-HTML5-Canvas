@@ -39,37 +39,37 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
-function draw_Rectangle() {
-  var canvas = document.getElementById("m");
-  var ctx = canvas.getContext("2d");
-  ctx.fillRect(50, 25, 150, 100)
+function draw_Rectangle() { //establishes drawing rectangle onto the canvas function
+  var canvas = document.getElementById("m"); //finds the canvas where the function will take place
+  var ctx = canvas.getContext("2d"); //establishes that it is 2d
+  ctx.fillRect(50, 25, 150, 100) //establishes the positioning of the rectangle and its size
 }
 	
-function draw_Name() {
-   var canvas = document.getElementById("m");
-   var ctx = canvas.getContext("2d");
-   ctx.font = "30px Arial";
-   ctx.fillText("mackenzie", 10, 50);
+function draw_Name() { //establishes drawing my name onto the canvas function
+   var canvas = document.getElementById("m"); //finds the canvas where the function will take place
+   var ctx = canvas.getContext("2d"); //establishes that it is 2d
+   ctx.font = "30px Arial"; //establishes font and size of name
+   ctx.fillText("mackenzie", 10, 50); //establishes the actual text and its positioning
 }
 	
-function draw_Image() {
-   var canvas = document.getElementById("m");
-   var ctx = canvas.getContext("2d");
-   var plant = document.getElementById("plant")
-   ctx.drawImage(plant, 100, 100, 100, 100);
+function draw_Image() { //establishes putting image onto the canvas function
+   var canvas = document.getElementById("m"); //finds the canvas where the function will take place
+   var ctx = canvas.getContext("2d"); //establishes that it is 2d
+   var plant = document.getElementById("plant") //finds the image
+   ctx.drawImage(plant, 100, 100, 100, 100); //specifies the size and positioning of the image defined
 }
 	
-function clear_Canvas() {
-   var canvas = document.getElementById("m");
-   var ctx = canvas.getContext("2d");
-   ctx.clearRect(0, 0, 300, 225)
+function clear_Canvas() { //establishes clearing the canvas function
+   var canvas = document.getElementById("m"); //finds the canvas where the function will take place
+   var ctx = canvas.getContext("2d"); //establishes that it is 2d
+   ctx.clearRect(0, 0, 300, 225) //specifies the canvas to be cleared
 };
 
 </script>
 
 
 
-<style>	
+<style>
 .body {
      margin: 0em;
 }
@@ -90,35 +90,35 @@ function clear_Canvas() {
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
+<div id="header" class="w3-container w3-flat-carrot"> <!--this is the colored header of the page-->
+	<h1>App6---HTML5-Canvas</h1> <!--the text within the header-->
 </div>
 	
-<div id="content" class="w3-container">
-	<p>Drawing Canvas</p>
+<div id="content" class="w3-container"> <!--this establishes a page for stuff to be able to be placed onto-->
+	<p>Drawing Canvas</p> <!--text on the page-->
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!--tect within the subheading-->
 	
 	</div>
-	<img id = "plant" src = "https://i.pinimg.com/564x/c2/20/82/c22082e1376a7021830baa6bb277c589.jpg" alt="cute" width="0" height="0"/> 
+	<img id = "plant" src = "https://i.pinimg.com/564x/c2/20/82/c22082e1376a7021830baa6bb277c589.jpg" alt="cute" width="0" height="0"/> <!--this establishes the name and what the actual image is, pulled from an image address-->
 	</div>
 		
 	<div id="content" class="w3-container">
-		<canvas id="m" width="300" height="225"style="border:1px solid #000000;"></canvas>
+		<canvas id="m" width="300" height="225"style="border:1px solid #000000;"></canvas> <!--this is establishes a canvas, and the style establishes a certain style of border around the element-->
 	
 	</div>
-		<a onclick="draw_Rectangle();" class="w3-button w3-teal w3-round">add a rectangle!</a> 
-		<a onclick="draw_Name();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> 
-		<a onclick="draw_Image();" class="w3-button w3-teal w3-round">click for a plant <3</a>
-		<a onclick="clear_Canvas();" class="w3-button w3-teal w3-round">clear canvas :(</a>
+		<a onclick="draw_Rectangle();" class="w3-button w3-teal w3-round">add a rectangle!</a> <!--this button activates the draw a rectangle function once clicked. the w3 establishes the style of the button, teal and round.-->
+		<a onclick="draw_Name();" class="w3-button w3-teal w3-round">add my name ᵕ̈</a> <!--this button activates drawing my name function once clicked-->
+		<a onclick="draw_Image();" class="w3-button w3-teal w3-round">click for a plant <3</a> <!--this button activates the placing an image in the canvas function once clicked-->
+		<a onclick="clear_Canvas();" class="w3-button w3-teal w3-round">clear canvas :(</a> <!--this button activates the clearing of the canvas function once clicked-->
 	</div>
 
 	
 	
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!--establishes a colored footer-->
+	<p>DIY!</p> <!--the text within the footer-->
 </footer>
 
 </body>
